@@ -10,6 +10,8 @@ router.post('/login', controller.postLogin);
 
 router.get('/dashboard', requireAuth, controller.getDashboard);
 router.get('/profile', requireAuth, controller.getProfile);
+// router.get('/attendance', requireAuth, controller.getAttendance);
+
 
 router.get('/selectAttendance', requireAuth, controller.getSelectAttendance);
 router.post('/selectAttendance', requireAuth, controller.postSelectAttendance);
